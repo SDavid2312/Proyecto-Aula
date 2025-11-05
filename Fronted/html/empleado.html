@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panel del Empleado</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h2>Bienvenido, <span id="nombreUsuario"></span></h2>
+      <button id="logoutBtn">Cerrar sesión</button>
+    </header>
+
+    <section class="acciones">
+      <h3>Registro de asistencia</h3>
+      <button id="checkInBtn">Registrar entrada</button>
+      <button id="checkOutBtn">Registrar salida</button>
+    </section>
+
+    <section class="historial">
+      <h3>Historial de asistencias</h3>
+      <table border="1" width="100%">
+        <thead>
+          <tr>
+            <th>Fecha</th>
+            <th>Hora entrada</th>
+            <th>Hora salida</th>
+            <th>Horas trabajadas</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </div>
+
+  <script src="/js/empleado.js" defer></script>
+  <div id="toast"></div>
+
+</body>
+</html>

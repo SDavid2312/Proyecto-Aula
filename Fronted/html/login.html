@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestor de Tiempo</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h2 id="titulo">Iniciar Sesión</h2>
+    <form id="form">
+      <input type="text" id="nombre" placeholder="Nombre (solo para registro)" style="display:none;">
+      <input type="email" id="correo" placeholder="Correo electrónico" required>
+      <input type="password" id="contraseña" placeholder="Contraseña" required>
+      <button type="submit" id="btnAccion">Login</button>
+    </form>
+
+
+    <p id="msg" class="mensaje"></p>
+  </div>
+
+  <script src="/js/login.js" defer></script>
+  <div id="toast"></div>
+
+</body>
+</html>

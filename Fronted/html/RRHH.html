@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panel RRHH</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h2>Panel de RRHH - Bienvenido, <span id="nombreUsuario"></span></h2>
+    </header>
+
+
+    <section class="empleados">
+      <h3>Gestión de empleados</h3>
+      <button id="agregarEmpleadoBtn">Agregar empleado</button>
+      <div id="registroContainer" style="display:none; margin-top:20px;"></div>
+
+      <table id="tablaEmpleados" border="1" width="100%">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Correo</th>
+            <th>Cargo</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+
+    
+
+ <section class="asistencias">
+  <h3>Registro de asistencias</h3>
+
+  <div style="margin-bottom: 10px;">
+    <label>Filtrar por fecha:</label>
+    <input type="date" id="fechaFiltro">
+  </div>
+
+  <div class="table-container">
+    <table id="tablaAsistencias" border="1" width="100%">
+      <thead>
+        <tr>
+          <th>Empleado</th>
+          <th>Fecha</th>
+          <th>Entrada</th>
+          <th>Salida</th>
+          <th>Horas trabajadas</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</section>
+
+
+
+
+    <button id="logoutBtn">Cerrar sesión</button>
+  </div>
+
+  <div id="toast"></div>
+  <script src="/js/rrhh.js" defer></script>
+</body>
+</html>
